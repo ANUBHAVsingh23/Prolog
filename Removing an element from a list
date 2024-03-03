@@ -1,0 +1,6 @@
+remove_element(_, [], []).
+remove_element(X, [X|Xs], Ys) :-
+    !,
+   remove_element(X, Xs, Ys).
+remove_element(X, [Y|Xs], [Y|Ys]) :-
+    remove_element(X, Xs, Ys).
