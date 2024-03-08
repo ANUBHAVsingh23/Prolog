@@ -1,0 +1,11 @@
+% Facts
+likes(john, apples).
+likes(mary, oranges).
+likes(peter, bananas).
+
+% Rules
+enjoys_fruit(X) :- likes(X, Y), fruit(Y).
+
+% Query
+?- enjoys_fruit(john).
+true.
