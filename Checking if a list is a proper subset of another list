@@ -1,0 +1,4 @@
+
+proper_subset(X, Y) :-
+    subset(X, Y),
+    X \= Y.
