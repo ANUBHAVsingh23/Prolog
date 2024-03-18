@@ -1,0 +1,13 @@
+
+
+Prolog - Conjunctions & Disjunctions
+
+Previous
+Next
+In this chapter, we shall discuss Conjunction and Disjunction properties. These properties are used in other programming languages using AND and OR logics. Prolog also uses the same logic in its syntax.
+
+Conjunction
+Conjunction (AND logic) can be implemented using the comma (,) operator. So two predicates separated by comma are joined with AND statement. Suppose we have a predicate, parent(jhon, bob), which means “Jhon is parent of Bob”, and another predicate, male(jhon), which means “Jhon is male”. So we can make another predicate that father(jhon,bob), which means “Jhon is father of Bob”. We can define predicate father, when he is parent AND he is male.
+
+Disjunction
+Disjunction (OR logic) can be implemented using the semi-colon (;) operator. So two predicates separated by semi-colon are joined with OR statement. Suppose we have a predicate, father(jhon, bob). This tells that “Jhon is father of Bob”, and another predicate, mother(lili,bob), this tells that “lili is mother of bob”. If we create another predicate as child(), this will be true when father(jhon, bob) is true OR mother(lili,bob) is true.
